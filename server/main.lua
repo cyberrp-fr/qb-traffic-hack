@@ -1,15 +1,19 @@
 QBCore = exports['qb-core']:GetCoreObject()
 
+local itemName = "Traffic hack device"
+local itemDesc = "A device which hacks vehicles at proximity and crashes them into each other at the initial location."
+-- french description: Un appareil qui pirate tous les voitures a proximité et les fait foncer sur un même point GPS a la vitesse maximale.
+
 local trafficBombItem = {
     name = "trafficbomb",
-    label = "Appareil bombe bouchons",
+    label = itemName,
     weight = 200,
     type = 'item',
     image = 'shell_device.png',
     unique = true,
     useable = true,
     shouldClose = true,
-    description = "Un appareil qui pirate tous les voitures a proximité et les fait foncer sur un même point GPS a la vitesse maximale.",
+    description = itemDesc,
 }
 
 exports['qb-core']:AddItem('trafficbomb', trafficBombItem)
